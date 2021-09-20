@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --MinProfile: 60px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.slidebox {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.slidebox .slidelist {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+}
+.slidebox .slidelist .slideitem {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 100%;
+  transition: all 1s;
+}
+.slidebox .slidelist .slideitem > a {
+  display: block;
+  width: auto;
+  position: relative;
+}
+
+.slidebox .slidelist .slideitem > a img {
+  max-width: 100%;
+}
+
+.slidebox .slide-control [class*='control'] label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slidebox .slide-control [class*='control'] label.prev {
+  left: 10px;
+  background: #333 url('../images/borad_img/left-arrow.png') center center / 50%
+    no-repeat;
+}
+.slidebox .slide-control [class*='control'] label.next {
+  right: 10px;
+  background: #333 url('../images/borad_img/right-arrow.png') center center /
+    50% no-repeat;
+}
+
+[name='slide'] {
+  display: none;
+}
+#slide01:checked ~ .slidelist .slideitem {
+  left: 0;
+}
+#slide02:checked ~ .slidelist .slideitem {
+  left: -100%;
+}
+#slide03:checked ~ .slidelist .slideitem {
+  left: -200%;
+}
+#slide04:checked ~ .slidelist .slideitem {
+  left: -300%;
+}
+
+.slide-control [class*='control'] {
+  display: none;
+}
+#slide01:checked ~ .slide-control .control01 {
+  display: block;
+}
+#slide02:checked ~ .slide-control .control02 {
+  display: block;
+}
+#slide03:checked ~ .slide-control .control03 {
+  display: block;
+}
+#slide04:checked ~ .slide-control .control04 {
+  display: block;
+}
+
+/* 배경화면 */
+.wrap {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserInfo {
+  margin: 5px;
+  display: flex;
+}
+
+.UserInfo .UserProfile {
+  display: flex;
+  align-items: center;
+}
+
+.UserInfo .UserProfile .UserProfileInfo {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserInfo .UserProfile .UserProfileInfo .UserGrade {
+  font: 22px sans-serif;
+}
+
+.UserInfo .UserProfile .UserProfileInfo .UserData {
+  margin: 2px;
+}
+
+.UserInfo .UserProfile .UserProfileInfo .UserData .UserMention {
+  font: 14px sans-serif;
+}
+
+.UserInfo .UserProfile .UserProfileInfo .UserData .UserUpload {
+  font: 14px sans-serif;
+}
+
+.UserInfo .UserProfile img {
+  width: var(--MinProfile);
+  height: var(--MinProfile);
+  border-radius: 50%;
+}
+
+.UserInfo .UserMedal img {
+  position: absolute;
+  right: 10px;
+  width: var(--MinProfile);
+  height: var(--MinProfile);
+  border-radius: 50%;
+}
+
+.board {
+  margin: 3px;
+}
+
+.board .title {
+  font: 15px sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .title .board_info {
+  margin: 3px;
+}
+
+.board .title .board_info .board_category {
+  font: 14px sans-serif;
+}
+
+.board .title .board_info .board_time {
+  font: 14px sans-serif;
+}
+
+.board .board_comment {
+  margin: 3px;
+}
+
+.board .board_comment .board_interest {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.board_btn {
+  position: fixed;
+  top: 90%;
+  right: 8%;
+  z-index: 9999;
+  height: 20px;
+  width: auto;
+}
+
+.board_btn img {
+  width: var(--MinProfile);
+  height: var(--MinProfile);
+  border-radius: 50%;
+}

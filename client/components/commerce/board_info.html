@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커머스</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles/board_info.css">
+</head>
+<body>
+    <div class="wrap">        
+            <!-- 게시글 상세페이지 이미지-->
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <a><img src="../../images/board_test.jpg"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="../../images/test.png"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="../../images/메아리.png"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="../../images/메아리.png"></a>
+                    </li>
+                </ul>
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide04" class="prev"></label>
+                        <label for="slide02" class="next"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="prev"></label>
+                        <label for="slide03" class="next"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="prev"></label>
+                        <label for="slide04" class="next"></label>
+                    </div>
+                    <div class="control04">
+                        <label for="slide03" class="prev"></label>
+                        <label for="slide01" class="next"></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 게시글 상세페이지 유저 정보-->
+            <div class="UserInfo">
+                <!-- 유저 게시글 썻을 떄 유저 정보 나오는 곳,,,-->
+                <div class="UserProfile">
+                    <img src="../../images/board_test.jpg" alt=""/>
+                    <div class="UserProfileInfo">
+                        <span class="UserGrade">등린이</span>
+                            <div class="UserData">
+                            <span class="UserMention">등린이</span>
+                            <span class="UserUpload">업로드시간</span> 
+                        </div>                       
+                    </div>
+                </div>
+                <div class="UserMedal">
+                    <img src="../../images/메달.png" alt=""/>
+                </div>
+                
+            </div>
+            <hr />
+            <div class="board">
+                <div class="title">
+                    >임시로 제작된 게시글 제목입니다. 왜안됨? 다음줄로 넘어가나요?
+                    넘어가는거같네요
+                    <div class="board_info">
+                        <span class="board_category">카테고리란 </span>
+                        <span class="board_time">00시00분</span>
+                    </div>                
+                </div>
+
+                <!-- 게시글 상세페이지 게시글 내용 -->
+                <div class="board_comment">
+                    DB_data
+                    <div class="board_interest">
+                        좋 10 댓 10 구 10
+                    </div>
+                </div>
+                
+            </div>        
+            <!-- 게시글 상세페이지 문의하기-->
+            <div class="board_btn">
+                <a href="" target="_blank" >
+                    <img src="../../images/메아리.png" ></a>
+            </div>    
+        </div>
+        
+    </div>
+</body>
+</html>
