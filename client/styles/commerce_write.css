@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  border-bottom: 1.4px solid darkgray;
+  padding-bottom: 25px;
+}
+
+.main {
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
+.smartphone {
+  display: inline-block;
+  float: right;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.wifi,
+.battery,
+.lte {
+  width: 20px;
+  height: 20px;
+}
+
+.share {
+  float: right;
+  margin-top: 50px;
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 203, 62);
+}
+
+.image {
+  padding-top: 120px;
+  margin-left: 15px;
+  height: 150px;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.view1,
+.view2,
+.view3,
+.view4 {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-left: 15px;
+}
+.info {
+  margin-left: 30px;
+  margin-top: 80px;
+  font-weight: bold;
+  color: darkgray;
+  line-height: 40px;
+  font-size: 19px;
+}
+.title,
+.price {
+  font-size: 19px;
+  font-weight: bold;
+  border: 0px;
+  border-bottom: 1.2px solid rgb(202, 201, 201);
+  padding-bottom: 30px;
+  margin-top: 25px;
+  width: 315px;
+}
+
+.category {
+  padding-bottom: 30px;
+  margin-top: 25px;
+  width: 315px;
+  border: 0px;
+  font-weight: bold;
+  background-color: white;
+  text-align: left;
+  font-size: 19px;
+  border-bottom: 1.2px solid rgb(202, 201, 201);
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+
+::placeholder.title,
+::placeholder.price {
+  color: darkgray;
+}
+
+.detail {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: rgb(53, 45, 45);
+  border: 0px;
+  width: 300px;
+  height: 300px;
+}
