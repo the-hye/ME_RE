@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/map.css">
+    <script src="../../js/map.js"></script>
+  </head>
+  <body>
+    <!-- map 삽입 -->
+    <div id="map"></div>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../../styles/map.css">
-  <script type="text/javascript" src="../js/map.js"></script>
-  <title>Google Map</title>
-</head>
-
-<body>
-  <div id="map"></div>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAklIBFObvvk5RMIRvuG3-tiWTCAwJskxo&callback=initMap&region=kr"></script>
-  <!-- <script>
-    function initMap() {
-      var seoul = { lat: 37.5642135 ,lng: 127.0016985 };
-      var map = new google.maps.Map(
-        document.getElementById('map'), {
-          zoom: 12,
-          center: seoul
-        });
-      
-    }
-  </script> -->
-  
-</body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAklIBFObvvk5RMIRvuG3-tiWTCAwJskxo&callback=initMap&libraries=&v=weekly"
+      async></script>
+  </body>
 </html>
