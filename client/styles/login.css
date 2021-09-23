@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/client/images/mountain.jpg');
+    background-image: url('../images/mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
