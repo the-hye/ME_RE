@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 전체 화면 */
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ }
+
+/* 운동결과 내비게이션 */
+.share_box{
+  display: table;
+  width:100%; 
+  height: 10%;
+  border-bottom: 1px solid darkgray;
+  position: relative;
+}
+
+
+
+.share_box span{
+  text-align: center;
+  display:table-cell;
+  vertical-align:middle;
+  font-size: 20px;
+  
+}
+
+/* 공유 버튼 */
+#btn_share {
+  background-color:transparent;
+  border : 0;
+  text-align: center;
+  display:table-cell;
+  vertical-align:middle;
+  position:absolute;
+  right: 10px;
+  top:35%;
+  
+}
+
+/* 원형 */
+.result_area{
+    width:99%; 
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid darkgray;
+  }
+
+
+.circular_group {
+    display: flex;
+    flex-direction: row;
+    margin:15px 10px 5px 10px;
+    justify-content: space-around;
+}
+
+
+.circular {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(1,199,60);
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circular p{
+  margin: 0px 10px 10px 10px;
+}
+
+
+.numb { 
+  color: rgb(1,199,60);
+} 
+.numb2 { 
+  color: rgb(1,199,60);
+} 
+
+.stamp_img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+
+.percent_medal{
+  display: flex; 
+  flex-direction: row; 
+  height: 80px; 
+  text-align: center;
+}
+
+/* 그래프 */
+.graph{
+ height:10px; 
+ background:white; 
+ border-radius:30px;
+ box-shadow: 1px 1px 1px 1px rgb(202, 202, 202) inset;
+ width:40%;
+ margin:35px 20px 35px 30px;
+ }
+
+.graph span{
+  display:block;
+  width: 73%;
+  height: 10px;
+  line-height: 20px;
+  background: rgb(1,199,60);
+  border-radius: 30px;
+}
+
+
+.percent {
+   color:rgb(167, 167, 167);
+   position: relative;
+   margin-top:27px;
+   margin-right: 20px;
+ }
+
+
+
+.alert{
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+.alert_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert_box p{
+  margin: 0px 10px 10px 10px;
+}
+
+
+.round p{
+  
+  padding : 3px 10px 5px 10px;
+  background-color: rgb(1,199,60);
+  border-radius: 20px;
+  color: white;
+}
+
+/* 지난 등산기록 */
+.result_record{
+  
+  width:100%; 
+  height:30%;
+  margin-top:10px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+}
+
+.result_record::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+
+.box { 
+  width: 95%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(202, 202, 202);
+  margin:0px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.box_line1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.date {
+  
+  padding : 3px 10px 5px 10px;
+  background-color: rgb(1,199,60);
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  
+}
+
+.mount_info{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right:10px;
+  
+}
+
+.mount{
+  
+  border-bottom: 10px solid rgb(1,199,60);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-bottom:3px;
+  
+}
+.mount_name p{
+  color: rgb(1,199,60);
+  font-size: 13px;
+  position: relative;
+  margin-top:5px;
+}
+
+
+.alert2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+.alert2 p{
+  border-radius: 20px;
+  color: rgb(133, 131, 131);
+  font-size: 12px;
+ }
+
+ .alert_name{
+
+  margin: -5px 10px 0px 10px;
+  border-radius: 20px;
+  color: rgb(1,199,60);
+  font-size: 12px;
+ }
+
+ .alert_result{
+  margin: 0px 10px 10px 10px;
+  border-radius: 20px;
+  color: rgb(1,199,60);
+  font-size: 30px;
+ }
