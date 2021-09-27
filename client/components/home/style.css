@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+KR:wght@300;500;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.topmenu-container{
+    position: sticky;
+    top : 0px;
+    /* background : black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d9d9df; */
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid #d9d9df;
+    box-shadow: 1px 0px 15px #d9d9df;
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    z-index: 100;
+}
+
+.topmenu-container .menu{
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    width: auto;
+    height: 22px;
+    /* 클릭가능한버튼 */
+    cursor: pointer;
+}
+
+.topmenu-container .meari-logo{
+    position:relative;
+    top: 16px;
+    width: auto;
+    height: 30px;
+    /* 클릭가능한버튼 */
+    cursor: pointer;
+}
+
+.topmenu-container .dm{
+    position: absolute;
+    right: 28px;
+    bottom: 16px;
+    margin-right: 30px;
+    width: auto;
+    height: 22px;
+    /* 클릭가능한버튼 */
+    cursor: pointer;
+}
+
+.topmenu-container .notice{
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    width: auto;
+    height: 22px;
+    /* 클릭가능한버튼 */
+    cursor: pointer;
+}
+
+.weather-container{
+    margin: 20px 20px 0 20px; 
+}
+
+.weather-wrapper{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.weather-wrapper .itme1{
+    display:flex;
+    align-self: flex-end;
+}
+
+.weather-wrapper .item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.weather-wrapper .cloud{
+    width: auto;
+    height: 60px;
+}
+.weather-wrapper .dustinfo{
+    margin-top: 3px;
+}
+.weather-wrapper .locationinfo{
+    margin-bottom: 10px;
+}
+
+.bx-wrapper{
+    margin:10px 20px 0px 20px; 
+    position: static!important; /* center to page correctly */
+    border: 0px!important; /* border */
+    -webkit-box-shadow: none!important; /* these two shadows */
+    box-shadow: none!important;
+}
+
+.course-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -30px 20px 0px 20px;
+}
+
+h5{
+    font-size : 11px;
+    /* 글자사이간격 */
+    letter-spacing: -1px;
+    /* 노토산스적용 */
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #dbdbdb;
+}
+
+.slider-container{
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.slider-container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.slider-container ul li{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.slider-container ul li:hover{
+    color: #fd5e3f;
+}
+
+.slider-container ul li.active{
+    color: #fd5e3f;
+    border-bottom: 1px solid #fd5e3f;
+    line-height: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 170px;
+    margin: 15px 0 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* 이게뭐임? */
+    margin-right: 10px !important;
+    width: 110px !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .shade{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.164);
+    position: absolute;
+}
+
+.swiper-slide h5{
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    left: 0;
+    margin-left: 8px;
+    text-align: left;
+    line-height: 14px;
+    bottom: 17%;
+}
+
+.swiper-slide h6{
+    position: absolute;
+    color: #fff;
+    font-size: 9px;
+    left: 0;
+    bottom: 6%;
+    margin-left: 8px;
+    text-align: left;
+    line-height: 14px;
+    font-weight: 400;
+}
+.swiper-slide h6 img{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.bottommenu-container{
+    position: fixed;
+    width: 100%;
+    bottom : 0px;
+    padding-top: 10px;
+    /* background : black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #fff;
+    height: 80px;
+    border-top: 1px solid #d9d9df;
+    box-shadow: 1px 0px 15px #d9d9df;
+
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    z-index: 100;
+}
+
+.bottommenu-container .icon{
+    width: auto;
+    height: 24px;
+
+    /* position: absolute;
+    left: 20px;
+    bottom: 16px;
+    width: auto;
+    height: 22px; */
+    /* 클릭가능한버튼 */
+    cursor: pointer;
+}

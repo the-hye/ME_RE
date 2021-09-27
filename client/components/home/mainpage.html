@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+     <!-- swiper 사용 css -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+     
+
+    <!-- bxslider외부파일 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+ 
+    <div class="topmenu-container">
+        <a href="#a"><img src="images/new목록.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/메아리.png" class="meari-logo" alt="meari-logo"></a>
+        <a href="#a"><img src="images/DM.png" class="dm" alt="dm"></a> 
+        <a href="#a"><img src="images/종.png" class="notice" alt="notice"></a>
+    </div>
+
+    <!-- 날싸 -->
+    <!-- weather_info 날씨 맨트  -->
+    <div class="weather-container">
+        <h5>덥지 않고 등산하기 좋은 날씨에요</h5>
+        <div class="weather-wrapper">
+            <div class="itme1">
+                <a href="#a"><img src="images/구름.png" class="cloud" alt="cloud"></a>
+                <!-- 날씨 종합정보 -->
+                <div class="item2">
+                    <h4> 23°C 흐림</h4>
+                    <h5 class = "dustinfo">미세 <b>좋음</b> 초미세 <b>안좋음</b></h5>
+                </div>
+            </div>
+            <!-- GPS정보 -->
+            <h5 class ="locationinfo">서울시 서초3동</h5>
+        
+        </div>  
+    </div>
+
+    <!-- 슬라이더 -->
+    
+    <div class="bxslider">
+        <a href="#a"><img src="images/banner1.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/banner2.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/banner3.png" class="menu" alt="menu"></a>
+    </div>     
+
+    <!-- 코스추천 -->
+    <div class="course-text">
+        <div class="item1">
+            <h4>코스추천</h4>
+            <h5>당신운동량에 따른 코스를 추천해드려요</h5>
+        </div>
+        <div class="item2">
+            <h5>전체</h5>
+        </div>
+    </div>
+    
+    <!-- 슬라이더 코스추천 -->
+
+    <div class="slider-container">
+
+        <div class="swiper-container">
+            <div class = "swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image1.jpg" alt="image1" />
+                    <h5>한라산<br /> 등산코스1번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />제주도</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image2.jpg" alt="image1" />
+                    <h5>속리산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />영동읍</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image3.jpg" alt="image1" />
+                    <h5>계족산<br /> 등산코스2번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />대전시</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image4.jpg" alt="image1" />
+                    <h5>속리산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />몰라</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image5.jpg" alt="image1" />
+                    <h5>백두산<br /> 등산코스23번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />북한</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image6.jpg" alt="image1" />
+                    <h5>구봉산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />대전시</h6>
+                </div>                
+            </div>
+        </div>   
+    </div>
+
+    <!-- 바텀네비게이션바 -->
+    <div class="bottommenu-container">
+        <a href="/#a/"><img src="images/1.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/2.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/3.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/4.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/5.png" class="icon" alt="icon"></a>
+    </div>
+
+<!-- bxslider사용 -->
+<script type="text/javascript">    
+    $(document).ready(function(){ 
+        $('.bxslider').bxSlider({
+            auto : true, // 자동회전
+            speed : 500, // 500ms
+            pause : 4000, // 멈춰있는 시간 4000ms
+            mode : 'horizontal', //수평으로 이동
+            pager : false, //페이징
+            controls : false, //좌우 화살표
+            shrinkItem : true,
+            adaptiveHeight : true, //각슬라이드 높이 자동조절
+            touchEnabled : true,
+            wrapperClass : 'bx-wrapper'
+        }); 
+    }); 
+
+</script>    
+
+<!-- swiper 사용 js -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- js -->
+<script src="main.js"></script>
+</div>
+
+
+
+<div class = "rowSort font_25px">
+    
+</div>
+
+<div class="test">1</div>
+<div class="test">2</div>
+<div class="test">3</div>
+<div class="test">4</div>
+<div class="test">5</div>
+<div class="test">6</div>
+<div class="test">7</div>
+<div class="test">8</div>
+<div class="test">9</div>
+<div class="test">10</div>
+<div class="test">11</div>
+<div class="test">12</div>
+<div class="test">13</div>
+<div class="test">14</div>
+<div class="test">15</div>
+<div class="test">16</div>
+<div class="test">17</div>
+<div class="test">18</div>
+<div class="test">19</div>
+<div class="test">20</div>
+
+</body>
+</html>
