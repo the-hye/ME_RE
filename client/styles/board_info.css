@@ -152,21 +152,21 @@ li {
   margin: 3px;
 }
 
-.board .title {
+.board .board_title {
   font: 15px sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-.board .title .board_info {
+.board .board_title .board_info {
   margin: 3px;
 }
 
-.board .title .board_info .board_category {
+.board .board_title .board_info .board_category {
   font: 14px sans-serif;
 }
 
-.board .title .board_info .board_time {
+.board .board_title .board_info .board_time {
   font: 14px sans-serif;
 }
 
