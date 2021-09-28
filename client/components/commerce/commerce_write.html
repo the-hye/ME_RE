@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>커머스</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../styles/commerce_write.css">
+    <link rel="stylesheet" href="./styles/commerce_write.css">
+    <link rel="stylesheet" href="../home/style.css">
 </head>
+
 <body>
     <div class="wrap">
-        <div class="smartphone">
-            <img src="../../images/commers_img/lte.png" class="lte">
-            <img src="../../images/commers_img/wifi.png" class="wifi">
-            <img src="../../images/commers_img/battery.png" class="battery">
+        <div class="topmenu-container">
+            <a href="#a"><img src="../home/images/new목록.png" class="menu" alt="menu"></a>
+            <a href="#a"><img src="../home/images/메아리.png" class="meari-logo" alt="meari-logo"></a>
+            <a href="#a"><img src="../home/images/DM.png" class="dm" alt="dm"></a>
+            <a href="#a"><img src="../home/images/종.png" class="notice" alt="notice"></a>
         </div>
-    <header>
-    <p class="main">새 거래글</p>
-    <p class="share">공유</p>
-    </header>
-    <section class="image">
-        <img src="../../images/commers_img/spoon2.jpg" class="view1">
-        <img src="../../images/commers_img/spoon3.jpg" class="view2">
-        <img src="../../images/commers_img/spoon4.jpg" class="view3">
-        <img src="../../images/commers_img/spoon5.jpg" class="view4">
-    </section>
-    <section class="info">
-        <input type="text" class="title" placeholder="글 제목" ></input>
-        <input type="button" class="category" value="카테고리 선택                                 >" onclick='alert("미구현")'></img></input>
-        <input type="text" class="price" placeholder="가격" ></input>
-    </section>
-    <section class="board">
-        <textarea class="detail" cols="10" rows="10">게시글 내용을 작성해주세요.(가품 및 판매 금지품목은 게시가 제한될 수도 있어요.)</textarea> 
-    </section>
-    <section class="nav"></section>   
-    
-    
+        <header>
+            <p class="main">새 거래글</p>
+            <p class="share">공유</p>
+        </header>
+        <section class="image">
+            <img src="./images/commerce_img/spoon2.jpg" class="view1">
+            <img src="./images/commerce_img/spoon3.jpg" class="view2">
+            <img src="./images/commerce_img/spoon4.jpg" class="view3">
+            <img src="./images/commerce_img/spoon5.jpg" class="view4">
+        </section>
+        <section class="info">
+            <input type="text" class="title" placeholder="글 제목"></input>
+            <input type="button" class="category" value="카테고리 선택                                 >"
+                onclick='alert("미구현")'></img></input>
+            <input type="text" class="price" placeholder="가격"></input>
+        </section>
+        <section class="board">
+            <textarea class="detail" cols="10" rows="10">게시글 내용을 작성해주세요.(가품 및 판매 금지품목은 게시가 제한될 수도 있어요.)</textarea>
+        </section>
+
+        <!-- 바텀네비게이션바 -->
+        <div class="bottommenu-container">
+            <a href="/#a/"><img src="../home/images/1.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/2.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/3.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/4.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/5.png" class="icon" alt="icon"></a>
+        </div>
+
+
     </div>
 </body>
+
 </html>
