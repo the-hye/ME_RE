@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>커머스</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../styles/commerce.css">
+    <link rel="stylesheet" href="./styles/commerce.css">
+    <link rel="stylesheet" href="../home/style.css">
 </head>
+
 <body>
     <div class="wrap">
-    <header>
-        <!--Head-->
-        <img class="head">
+        <div class="topmenu-container">
+            <a href="#a"><img src="../home/images/new목록.png" class="menu" alt="menu"></a>
+            <a href="#a"><img src="../home/images/메아리.png" class="meari-logo" alt="meari-logo"></a>
+            <a href="#a"><img src="../home/images/DM.png" class="dm" alt="dm"></a>
+            <a href="#a"><img src="../home/images/종.png" class="notice" alt="notice"></a>
+        </div>
+        <header>
+            <!--Head-->
             <p class="main">내 근처</p>
 
-            <div class="smartphone">
-                <img src="../../images/commers_img/lte.png" class="lte">
-                <img src="../../images/commers_img/wifi.png" class="wifi">
-                <img src="../../images/commers_img/battery.png" class="battery">
-
-            </div>
             <div class="icons">
-                <img class="search" img src="../../images/commers_img/searchIcon.png"></img>
-                <img class="alert" img src="../../images/commers_img/alert.png"></img>
-                <img class="message" img src="../../images/commers_img/message.png"></img>
+                <img class="search" img src="./images/commerce_img/searchIcon.png"></img>
             </div>
             <br>
             <p class="location">서울시 서초3동</p>
-            <img class="location2" src="../../images/commers_img/location.png"></img>
-        <!--Category-->
-        <div class="category">
-          <div class="buttonControl">
-            <button class="category1">등산화</button>
-            <button class="category1">시계</button>
-            <button class="category1">등산스틱</button>
-            <button class="category1">정글모</button>
-            <button class="category1">아이젠</button>
-            <button class="category1">등산복</button>
-          </div>
+            <img class="location2" src="./images/commerce_img/location.png"></img>
+            <!--Category-->
+            <div class="category">
+                <div class="buttonControl">
+                    <button class="category1">등산화</button>
+                    <button class="category1">시계</button>
+                    <button class="category1">등산스틱</button>
+                    <button class="category1">정글모</button>
+                    <button class="category1">아이젠</button>
+                    <button class="category1">등산복</button>
+                </div>
+            </div>
+        </header>
+        <section class="board">
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/shoes1.jpg">
+                <div class=content>
+                    <ul class="title">신발팝니다</ul>
+                    <ul class="name">명수찬</ul>
+                    <ul class="price">109,000</ul>
+                </div>
+            </div>
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/backpack.jpg">
+                <div class=content>
+                    <ul class="title">가방팝니다</ul>
+                    <ul class="name">류원선</ul>
+                    <ul class="price">49,900</ul>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/jacket.jpg">
+                <div class=content>
+                    <ul class="title">재킷팝니다</ul>
+                    <ul class="name">김민석</ul>
+                    <ul class="price">59,900</ul>
+                </div>
+            </div>
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/shoes2.jpg">
+                <div class=content>
+                    <ul class="title">신발팝니다</ul>
+                    <ul class="name">조미영</ul>
+                    <ul class="price">149,000</ul>
+                </div>
+            </div>
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/blazer.jpg">
+                <div class=content>
+                    <ul class="title">블레이저팝니다</ul>
+                    <ul class="name">선도우</ul>
+                    <ul class="price">120,000</ul>
+                </div>
+            </div>
+            <div class="post">
+                <img class="goods" src="./images/commerce_img/backpack2.jpg">
+                <div class=content>
+                    <ul class="title">가방팝니다</ul>
+                    <ul class="name">석지혜</ul>
+                    <ul class="price">39,900</ul>
+                </div>
+            </div>
+        </section>
+        <!-- 바텀네비게이션바 -->
+        <div class="bottommenu-container">
+            <a href="/#a/"><img src="../home/images/1.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/2.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/3.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/4.png" class="icon" alt="icon"></a>
+            <a href="/#a/"><img src="../home/images/5.png" class="icon" alt="icon"></a>
         </div>
-    </header>
-    <section class="board">
-        <div class="post">
-            <img class="goods" src="../../images/commers_img/shoes1.jpg">
-            <div class=content>
-              <ul class="title">신발팝니다</ul>
-             <ul class="name">명수찬</ul>
-             <ul class="price">109,000</ul>
-            </div>
-        </div>
-        <div class="post">
-            <img class="goods" src="../../images/commers_img/backpack.jpg">
-            <div class=content>
-              <ul class="title">가방팝니다</ul>
-             <ul class="name">류원선</ul>
-             <ul class="price">49,900</ul>
-            </div>
-        </div> 
-           
-        <div class="post">
-            <img class="goods" src="../../images/commers_img/jacket.jpg">
-            <div class=content>
-              <ul class="title">재킷팝니다</ul>
-             <ul class="name">김민석</ul>
-             <ul class="price">59,900</ul>
-            </div>
-        </div> 
-        <div class="post">  
-            <img class="goods" src="../../images/commers_img/shoes2.jpg">
-            <div class=content>
-              <ul class="title">신발팝니다</ul>
-             <ul class="name">조미영</ul>
-             <ul class="price">149,000</ul>
-            </div>
-        </div> 
-        <div class="post">  
-            <img class="goods" src="../../images/commers_img/blazer.jpg">
-            <div class=content>
-              <ul class="title">블레이저팝니다</ul>
-             <ul class="name">선도우</ul>
-             <ul class="price">120,000</ul>
-            </div>
-        </div> 
-        <div class="post">  
-            <img class="goods" src="../../images/commers_img/backpack2.jpg">
-            <div class=content>
-              <ul class="title">가방팝니다</ul>
-             <ul class="name">석지혜</ul>
-             <ul class="price">39,900</ul>
-            </div>
-        </div> 
-    </section>
-    <section class="nav"></section>
-</div>
+
+    </div>
 
 </body>
+
 </html>

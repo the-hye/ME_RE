@@ -1,190 +1,183 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>로그인</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../../styles/chat_room.css">
-    </head>
-    <body>
-        <div id="chat-body">
-            <!-- 프로필 사진, 프로필명 -->
-            <header>
-                <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
-                    <div class="profile-col">
-                        <span class="profile-name">김민석</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅창</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/chat_room.css">
+    <link rel="stylesheet" href="../home/style.css">
+</head>
+
+<body>
+    <div class="topmenu-container">
+        <a href="#a"><img src="../home/images/new목록.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="../home/images/메아리.png" class="meari-logo" alt="meari-logo"></a>
+        <a href="#a"><img src="../home/images/DM.png" class="dm" alt="dm"></a>
+        <a href="#a"><img src="../home/images/종.png" class="notice" alt="notice"></a>
+    </div>
+    <div id="chat-body">
+        <!-- 프로필 사진, 프로필명 -->
+        <header>
+            <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
+            <div class="profile-col">
+                <span class="profile-name">김민석</span>
+            </div>
+        </header>
+        <main>
+            <!-- 고정된 공지사항 영역 -->
+            <div class="notice-bar">
+                <i class="icon-bullhorn"></i>
+                <span>대화 중 상대방이 의심스럽다면, 거래를 하지 않는 것이 좋아요.</span>
+                <i class="icon-down-open-big"></i>
+            </div>
+            <!-- 채팅 내용 시작 -->
+            <div class="chat-content">
+                <!-- 메시지 시작 날짜 -->
+                <div class="date-line">
+                    <time datetime="2021-03-29">2021년 9월 23일 목요일</time>
+                </div>
+                <!-- 채팅 내용 -->
+                <div class="main-chat">
+                    <div class="friend-chat">
+                        <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
+                        <div class="friend-chat-col">
+                            <span class="profile-name">김민석</span>
+                            <span class="balloon">​
+                                ​[솔라] 어떻게 한순간의 떨림이
+                                소리 없이 너의 두 눈을 가리니
+                                ​[화사] 너의 뜻대로 흘러가네
+                                내게 상처를 주면 안 돼</span>
+                            <span class="balloon">​[문별] 넌 네 생각만 하지
+                                그래 뭐 그게 참 당연한 듯이
+                                어리석게 너에게만 맞춰 왔던 게
+                                날 괴롭히네 마지막까지 외롭게 해</span>
+                        </div>
+                        <time datetime="07:30:00+09:00">오전 7:30</time>
+                    </div>
+                    <div class="me-chat">
+                        <div class="me-chat-col">
+                            <span class="balloon">​[휘인] 할 말이 없어 Go away
+                                설명이 더 필요해?
+                                ​[솔라] 화를 내도 내 입만 아프다니까
+                                넌 멋대로만 해</span>
+                        </div>
+                        <time datetime="07:32:00+09:00">오전 7:32</time>
+                    </div>
+                    <div class="me-chat">
+                        <div class="me-chat-col">
+                            <span class="balloon">​[화사] 난 언제나 너너너너 해
+                                넌 언제나 나나나나 해
+                                ​[휘인] 움띠야이야 띠야이야
+                                네 멋대로 중심이 돼</span>
+                        </div>
+                        <time datetime="07:33:00+09:00">오전 7:33</time>
+                    </div>
+                    <div class="friend-chat">
+                        <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
+                        <div class="friend-chat-col">
+                            <span class="profile-name">김민석</span>
+                            <span class="balloon">​
+                                [솔라] 넌 너만 생각해
+                                ​[휘인] 밤을 새워 버렸어
+                                차갑게 식은 머리도
+                                ​[솔라] 너의 태도가 이해 안 돼
+                                이젠 조금씩 지쳐 가네</span>
+                            <span class="balloon">​
+                                [문별] 이젠 나도 내 앞길 챙기지
+                                ​[문별] 내가 맞춰야 돼 AY
+                                매번 That's OK man
+                                이런 식으로 매일 반복 돼
+                                나의 호의 에도 너의 권리만 있다면
+                                뭔가 잘못된 거지</span>
+                            <span class="balloon">​[솔라] 뭘 그렇게 놀래 당연한 이야긴데
+                                ​[화사] 화를 내도 내 입만 아프다니까
+                                ​[문별] 네 멋대로만 해</span>
+                        </div>
+                        <time datetime="07:35:00+09:00">오전 7:35</time>
+                    </div>
+                    <div class="me-chat">
+                        <div class="me-chat-col">
+                            <span class="balloon">[휘인] 난 언제나 너너너너 해
+                                넌 언제나 나나나나 해</span>
+                        </div>
+                        <time datetime="07:36:00+09:00">오전 7:36</time>
+                    </div>
+                    <div class="me-chat">
+                        <div class="me-chat-col">
+                            <span class="balloon">​[화사] 움띠야이야 띠야이야
+                                네 멋대로 중심이 돼</span>
+                        </div>
+                        <time datetime="07:49:00+09:00">오전 7:49</time>
+                    </div>
+                    <div class="friend-chat">
+                        <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
+                        <div class="friend-chat-col">
+                            <span class="profile-name">김민석</span>
+                            <span class="balloon">​[솔라] 넌 너만 생각해
+                                그럴 거면 너너너나 해 에이에
+                                움띠야이야 띠야이야
+                                ​[화사] 네 멋대로 굴면 안 돼
+                                ​[솔라] 멋대로만 해 넌 너나 해</span>
+                            <span class="balloon">​[화사] I'm ready to go on my way</span>
+                        </div>
+                        <time datetime="09:00:00+09:00">오전 9:00</time>
+                    </div>
+                    <div class="me-chat">
+                        <div class="me-chat-col">
+                            <span class="balloon">​[휘인] 할 말이 없어 Go away
+                                설명이 더 필요해?
+                                ​[솔라] 화를 내도 내 입만 아프다니까
+                                ​[문별] 나도 멋대로 할래
+                                ​[화사] Bicho Malo</span>
+                        </div>
+                        <time datetime="09:30:00+09:00">오전 9:30</time>
+                    </div>
+                    <div class="friend-chat">
+                        <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
+                        <div class="friend-chat-col">
+                            <span class="profile-name">김민석</span>
+                            <span class="balloon">​[화사] 난 언제나 너너너너 해
+                                넌 언제나 나나나나 해
+                                ​[휘인] 움띠야이야 띠야이야
+                                ​[휘인]&[화사] 네 멋대로 중심이 돼
+                                ​[솔라] 넌 너만 생각해
+                                그럴 거면 너너너나 해 에이에
+                                움띠야이야 띠야이야
+                                ​[휘인] 네 멋대로 굴면 안 돼
+                                ​[휘인] 내 멋대로 할래</span>
+                        </div>
+                        <time datetime="10:15:00+09:00">오전 10:15</time>
                     </div>
                 </div>
-            </header>
-            <main>
-                <!-- 고정된 공지사항 영역 -->
-                <div class="notice-bar">
-                    <i class="icon-bullhorn"></i>
-                    <span>대화 중 상대방이 의심스럽다면, 거래를 하지 않는 것이 좋아요.</span>
-                    <i class="icon-down-open-big"></i>
+            </div>
+            <!-- 채팅 입력창 -->
+            <div class="insert-content">
+                <form name="chatform" action="#" method="post">
+                    <textarea name="chat-insert" required></textarea>
+                    <input type="submit" class="chat-submit" value="전송">
+                </form>
+                <!-- 채팅 입력 관련 기능(파일 첨부, 캡쳐 등) -->
+                <div class="insert-menu">
+                    <i class="icon-smile"></i>
+                    <i class="icon-attach"></i>
+                    <i class="icon-phone"></i>
+                    <i class="icon-calendar-empty"></i>
+                    <i class="icon-camera"></i>
                 </div>
-                <!-- 채팅 내용 시작 -->
-                <div class="chat-content">
-                    <!-- 메시지 시작 날짜 -->
-                    <div class="date-line">
-                        <time datetime="2021-03-29">2021년 9월 23일 목요일</time>
-                    </div>
-                    <!-- 채팅 내용 -->
-                    <div class="main-chat">
-                        <div class="friend-chat">
-                            <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
-                            <div class="friend-chat-col">
-                                <span class="profile-name">김민석</span>
-                                <span class="balloon">​[화사] 난 너의 위성 네 주윌 맴돌지
-                                    그렇다고 네가 태양은 아니니
-                                    ​[휘인] 너의 멋대로 중심이 돼
-                                    제멋대로 굴면 안 돼
-                                    
-                                    ​[솔라] 어떻게 한순간의 떨림이
-                                    소리 없이 너의 두 눈을 가리니
-                                    ​[화사] 너의 뜻대로 흘러가네
-                                    내게 상처를 주면 안 돼</span>
-                                <span class="balloon">​[문별] 넌 네 생각만 하지
-                                    그래 뭐 그게 참 당연한 듯이
-                                    어리석게 너에게만 맞춰 왔던 게
-                                    날 괴롭히네 마지막까지 외롭게 해</span>
-                            </div>
-                            <time datetime="07:30:00+09:00">오전 7:30</time>
-                        </div>
-                        <div class="me-chat">
-                            <div class="me-chat-col">
-                                <span class="balloon">​[휘인] 할 말이 없어 Go away
-                                    설명이 더 필요해?
-                                    ​[솔라] 화를 내도 내 입만 아프다니까
-                                    넌 멋대로만 해</span>
-                            </div>
-                            <time datetime="07:32:00+09:00">오전 7:32</time>
-                        </div>
-                        <div class="me-chat">
-                            <div class="me-chat-col">
-                                <span class="balloon">​[화사] 난 언제나 너너너너 해
-                                    넌 언제나 나나나나 해
-                                    ​[휘인] 움띠야이야 띠야이야
-                                    네 멋대로 중심이 돼</span>
-                            </div>
-                            <time datetime="07:33:00+09:00">오전 7:33</time>
-                        </div>
-                        <div class="friend-chat">
-                            <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
-                            <div class="friend-chat-col">
-                                <span class="profile-name">김민석</span>
-                                <span class="balloon">​[솔라] 넌 너만 생각해
-                                    그럴 거면 너너너나 해 에이에
-                                    움띠야이야 띠야이야
-                                    ​[휘인] 네 멋대로 굴면 안 돼
-                                    ​[화사] 멋대로만 해 AY
-                                    
-                                    ​[휘인] 밤을 새워 버렸어
-                                    차갑게 식은 머리도
-                                    ​[솔라] 너의 태도가 이해 안 돼
-                                    이젠 조금씩 지쳐 가네</span>
-                                <span class="balloon">​[문별] 이젠 나도 내 앞길 챙기지
-                                    너 없다고 무너질 내가 아니니
-                                    ​[솔라] 너의 품에서 벗어날래
-                                    내 멋대로 살아갈래
-                                    
-                                    ​[문별] 내가 맞춰야 돼 AY
-                                    매번 That's OK man
-                                    이런 식으로 매일 반복 돼
-                                    나의 호의 에도 너의 권리만 있다면
-                                    뭔가 잘못된 거지</span>
-                                <span class="balloon">​[솔라] 뭘 그렇게 놀래 당연한 이야긴데
-                                    ​[화사] 화를 내도 내 입만 아프다니까
-                                    ​[문별] 네 멋대로만 해</span>
-                            </div>
-                            <time datetime="07:35:00+09:00">오전 7:35</time>
-                        </div>
-                        <div class="me-chat">
-                            <div class="me-chat-col">
-                                <span class="balloon">[휘인] 난 언제나 너너너너 해
-                                    넌 언제나 나나나나 해</span>
-                            </div>
-                            <time datetime="07:36:00+09:00">오전 7:36</time>
-                        </div>
-                        <div class="me-chat">        
-                            <div class="me-chat-col">
-                                <span class="balloon">​[화사] 움띠야이야 띠야이야
-                                    네 멋대로 중심이 돼</span>
-                            </div>
-                            <time datetime="07:49:00+09:00">오전 7:49</time>
-                        </div>
-                        <div class="friend-chat">
-                            <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
-                            <div class="friend-chat-col">
-                                <span class="profile-name">김민석</span>
-                                <span class="balloon">​[솔라] 넌 너만 생각해
-                                    그럴 거면 너너너나 해 에이에
-                                    움띠야이야 띠야이야
-                                    ​[화사] 네 멋대로 굴면 안 돼
-                                    ​[솔라] 멋대로만 해 넌 너나 해</span>
-                                <span class="balloon">​[화사] I'm ready to go on my way</span>
-                            </div>
-                            <time datetime="09:00:00+09:00">오전 9:00</time>
-                        </div>
-                        <div class="me-chat">        
-                            <div class="me-chat-col">
-                                <span class="balloon">​[휘인] 할 말이 없어 Go away
-                                    설명이 더 필요해?
-                                    ​[솔라] 화를 내도 내 입만 아프다니까
-                                    ​[문별] 나도 멋대로 할래
-                                    ​[화사] Bicho Malo</span>
-                            </div>
-                            <time datetime="09:30:00+09:00">오전 9:30</time>
-                        </div>
-                        <div class="friend-chat">
-                            <img class="profile-img" src="../../images/캡처.PNG" alt="프로필사진">
-                            <div class="friend-chat-col">
-                                <span class="profile-name">김민석</span>
-                                <span class="balloon">​[화사] 난 언제나 너너너너 해
-                                    넌 언제나 나나나나 해
-                                    ​[휘인] 움띠야이야 띠야이야
-                                    ​[휘인]&[화사] 네 멋대로 중심이 돼
-                                    
-                                    
-                                    
-                                    ​[솔라] 넌 너만 생각해
-                                    그럴 거면 너너너나 해 에이에
-                                    움띠야이야 띠야이야
-                                    ​[휘인] 네 멋대로 굴면 안 돼
-                                    
-                                    ​[화사]&[문별] 재미없어
-                                    [휘인] 너너너나 해
-                                    ​[휘인]&[문별] 이젠 됐어
-                                    ​[솔라] 너너너나 해
-                                    [솔라]&[문별] 후회해도
-                                    ​[화사] 너너너나 해
-                                    ​[휘인] 네 멋대로 네 멋대로
-                                    ​[솔라] 멋대로만 해 너너나 해
-                                    ​[휘인] 내 멋대로 할래</span>
-                                <span class="balloon"><img class src="../../images/KakaoTalk_20210918_200536332.jpg"></span>
-                            </div>
-                            <time datetime="10:15:00+09:00">오전 10:15</time>
-                        </div>
-                    </div>
-                </div>
-                <!-- 채팅 입력창 -->
-                <div class="insert-content">
-                    <form name="chatform" action="#" method="post">
-                        <textarea name="chat-insert" required></textarea>
-                        <input type="submit" class="chat-submit" value="전송">
-                    </form>
-                    <!-- 채팅 입력 관련 기능(파일 첨부, 캡쳐 등) -->
-                    <div class="insert-menu">
-                        <i class="icon-smile"></i>
-                        <i class="icon-attach"></i>
-                        <i class="icon-phone"></i>
-                        <i class="icon-calendar-empty"></i>
-                        <i class="icon-camera"></i>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </body>
+            </div>
+        </main>
+    </div>
+    <!-- 바텀네비게이션바 -->
+    <div class="bottommenu-container">
+        <a href="/#a/"><img src="../home/images/1.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="../home/images/2.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="../home/images/3.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="../home/images/4.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="../home/images/5.png" class="icon" alt="icon"></a>
+    </div>
+</body>
+
 </html>
