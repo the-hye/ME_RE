@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 전체 화면 */
+.wrap {
+  width: 100%;
+  height: 100vh;
+ }
+
+/* 피드 검색창과 피드, 인기, 최신 내비게이션 */
+.feed_up{
+  position:fixed; 
+  padding-bottom: 5px;
+  width:100%; 
+  top: 20px;
+  padding: 5px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 2px solid lightgray;
+}
+
+.up_line1{
+  position: relative;
+  width: 100%;
+}
+
+.round span{
+  float:left;
+  padding : 3px 10px 5px 10px;
+  background-color:white;
+  border: 2px solid gray;
+  border-radius: 20px;
+  color: black; 
+  margin: 0px 5px 5px 5px;
+}
+
+.up_line1 button{
+  position:absolute; 
+  border:none;
+  right:20px;
+  top:-5px;
+  background-color: transparent;
+  
+}
+
+.up_line1 img{
+  position:relative;
+  width: 45px;
+}
+
+.up_line2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.my_profile{
+  display: flex;
+  flex-direction: column;
+}
+
+.my_profile h3{
+  position: relative;
+  left:-15px;
+}
+
+/* 프로필 이미지 넣는 박스 */
+.image_box {
+  width: 100px;
+  height: 100px; 
+  border-radius: 70%;
+  overflow: hidden;
+  float:left;
+}
+
+/* 프로필 이미지 */
+.profile_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my_info{
+  display: flex;
+  flex-direction: column;
+}
+
+.alert{
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+.alert_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert_box p{
+  margin: 0px 10px 10px 10px;
+}
+
+.percent_medal{
+  display: flex; 
+  flex-direction: row; 
+  height: 80px; 
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/* 그래프 */
+.graph{
+ height:10px; 
+ background:white; 
+ border-radius:30px;
+ box-shadow: 1px 1px 1px 1px rgb(202, 202, 202) inset;
+ width:70%;
+ margin:15px 0px 15px 0px;
+ }
+
+.graph span{
+  display:block;
+  width: 73%;
+  height: 10px;
+  line-height: 20px;
+  background: rgb(1,199,60);
+  border-radius: 30px;
+}
+
+.percent {
+   color:rgb(167, 167, 167);
+   position: relative;
+ }
+
+ /* 프로필 밑에 문구 */
+.my_condition h4{
+  position: relative;
+  right:-10px;
+
+}
+
+
+/* 피드 검색창 */
+.search{
+  width: 95%;
+  height: 40px;
+  border-radius: 15px;
+  margin: 10px 10px 0px 5px;
+  padding-left:30px;
+  border: 1px solid lightgray;
+  background-color: rgb(243, 237, 237);
+  outline: none;
+  color: gray;
+  background-image : url("../images/돋보기.png"); 
+  background-position: 10px 50%;
+  background-repeat:no-repeat;
+
+  
+}
+
+.btn_group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* 피드, 인기, 최신 이동 버튼 */
+.btn_group button{
+  background-color:white;
+  border : 0;
+  margin : 15px 15px 10px 10px;
+  
+} 
+
+/* 피드 추가 버튼 */
+.feed_btn{
+  position:fixed; 
+  top:80%; 
+  right:8%; 
+  z-index: 9999;
+  height: 20px;
+  width:auto;
+}
+
+
+
+/* 전체 피드 박스 */
+.feed_area{
+  position: fixed;
+  overflow:auto; 
+  width:100%; 
+  height:450px;
+  top: 300px;
+}
+ 
+/* 피드 한줄(피드 3개가 한줄)*/
+ .img_sort{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width : 100%;
+  height : auto;
+  position: relative;
+  margin-bottom:-3px;
+ }
+
+ /*  각 피드 링크 박스 */
+ .img_link{
+  width:33%; 
+  height:auto;
+  padding-right: 1px;
+ }
+
+
+/* 각 피드 */
+.photo{
+  width:100%; 
+  height:auto;
+} 
