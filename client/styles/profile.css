@@ -184,23 +184,13 @@ a {
   justify-content: space-around;
 }
 
-/* 피드, 인기, 최신 이동 버튼 */
+/* 사진 및 판매물건버튼 */
 .btn_group button{
   background-color:white;
   border : 0;
   margin : 15px 15px 10px 10px;
   
 } 
-
-/* 피드 추가 버튼 */
-.feed_btn{
-  position:fixed; 
-  top:80%; 
-  right:8%; 
-  z-index: 9999;
-  height: 20px;
-  width:auto;
-}
 
 
 
