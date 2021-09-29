@@ -53,12 +53,12 @@ li {
 
 .slidebox .slide-control [class*='control'] label.prev {
   left: 10px;
-  background: #333 url('../images/borad_img/left-arrow.png') center center / 50%
+  background: #333 url('../images/board_img/left-arrow.png') center center / 50%
     no-repeat;
 }
 .slidebox .slide-control [class*='control'] label.next {
   right: 10px;
-  background: #333 url('../images/borad_img/right-arrow.png') center center /
+  background: #333 url('../images/board_img/right-arrow.png') center center /
     50% no-repeat;
 }
 
