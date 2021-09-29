@@ -25,9 +25,6 @@
     padding: 5px;
   }
 
-
-  
-
    /* 피드 검색창 */
   .search{
     width: 95%;
@@ -54,7 +51,7 @@
 
   /* 전체 피드 박스 */
   .feed_area{
-    position: fixed;
+    /* position: fixed; */
     overflow:auto; 
     width:99%; 
     height:80%;
@@ -124,6 +121,17 @@
   /* 프로필 정보 */
   .profile_info{
     margin-left:5px
+  }
+  #name{
+    color:white;
+    margin-left:2px;
+    font-size: 12px;
+  }
+
+  #rank{
+    color:white;
+    margin-left:2px;
+    font-size: 7px;
   }
 
 

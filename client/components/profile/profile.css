@@ -19,7 +19,7 @@ a {
 
 /* 피드 검색창과 피드, 인기, 최신 내비게이션 */
 .feed_up{
-  position:fixed; 
+  /* position:fixed;  */
   padding-bottom: 5px;
   width:100%; 
   top: 20px;
@@ -198,7 +198,7 @@ a {
 
 /* 전체 피드 박스 */
 .feed_area{
-  position: fixed;
+  /* position: fixed; */
   overflow:auto; 
   width:100%; 
   height:450px;
