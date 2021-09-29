@@ -97,6 +97,7 @@ a {
 .my_info{
   display: flex;
   flex-direction: column;
+  padding-top:20px;
 }
 
 .alert{
@@ -125,6 +126,7 @@ a {
   text-align: center;
   justify-content: space-around;
   align-items: center;
+  padding-bottom:20px;
   
 }
 

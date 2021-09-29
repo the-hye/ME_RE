@@ -83,6 +83,7 @@
     height: 250px; 
     overflow: hidden;
     text-align: center;
+    display: inline-block;
   }
   
   /* 피드 프로필 */
@@ -173,9 +174,6 @@
     font-size:10px;
   }
 
-  
-
-  
 
   
 /* 
