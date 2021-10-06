@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- swiper 사용 css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+     
+
+    <!-- bxslider외부파일 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- 날씨 -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- 지도 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./geoIndex.js"></script>
+
+</head>
+<body>
+ 
+    <div class="topmenu-container">
+        <a href="#a"><img src="images/new목록.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/meari-logo.png" class="meari-logo" alt="meari-logo"></a>
+        <a href="#a"><img src="images/DM.png" class="dm" alt="dm"></a> 
+        <a href="#a"><img src="images/종.png" class="notice" alt="notice"></a>
+    </div>
+
+    <!-- 날싸 -->
+    <!-- weather_info 날씨 맨트  -->
+    <div class="weather-container">
+        <div class="weather-coment">
+            <p class="noto-sans5" >덥지 않고 등산하기 좋은 날씨에요</p>
+        </div>
+        <div class="weather-wrapper">
+            <div class="itme1">
+                <div class ="item2">
+                    <a href="#a"><img class="js-weatherIcon"/></a>
+                    <p class="js-description noto-sans5"> </p>
+                </div>
+                <!-- 날씨 종합정보 -->
+                <div class = "item2">
+                    <p class = "js-tmpinfo noto-sans3B">00</p>
+                    <p class = "dustinfo noto-sans5">미세먼지 : 좋음</p>
+                </div>
+            </div>
+
+            <!-- GPS정보 -->
+            <div class = "itme3">
+                <p class ="js-currentlocation noto-sans5"> 위치 정보 불러오기 </p>
+                <input id="submit" type="image" src="images/target.png" />
+            </div>
+        </div>  
+    </div>
+
+    <!-- 슬라이더 -->
+    <div class="bxslider">
+        <a href="#a"><img src="images/banner1.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/banner2.png" class="menu" alt="menu"></a>
+        <a href="#a"><img src="images/banner3.png" class="menu" alt="menu"></a>
+    </div>     
+
+    <!-- 코스추천 -->
+    <div class="course-text">
+        <div class="item1">
+            <p class="noto-sans3B">코스추천</p>
+            <p class="noto-sans5">운동량에 맞는 코스를 추천해드려요</p>
+        </div>
+        <div class="item2">
+            <p class="noto-sans5">전체</p>
+        </div>
+    </div>
+    
+    <!-- 슬라이더 코스추천 -->
+    <div class="slider-container">
+
+        <div class="swiper-container">
+            <div class = "swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image1.jpg" alt="image1" />
+                    <h5>한라산<br/> 등산코스1번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />제주도</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image2.jpg" alt="image1" />
+                    <h5>속리산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />영동읍</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image3.jpg" alt="image1" />
+                    <h5>계족산<br /> 등산코스2번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />대전시</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image4.jpg" alt="image1" />
+                    <h5>속리산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />몰라</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image5.jpg" alt="image1" />
+                    <h5>백두산<br /> 등산코스23번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />북한</h6>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shade"></div>
+                    <img src="images/image6.jpg" alt="image1" />
+                    <h5>구봉산<br /> 등산코스3번</h5>
+                    <h6><img src="images/pin.png" alt="pin" />대전시</h6>
+                </div>                
+            </div>
+        </div>   
+    </div>
+
+    <!-- 당당산악회 -->
+    <div>
+        <!-- 당당산악회 header -->
+        <div class="crew-text">
+            <div class="item1">
+                <p class="noto-sans3B">당당산악회</p>
+                <p class="noto-sans5">함께할수록 즐거운 산생활</p>
+            </div>
+            <div class="item2">
+                <p class="noto-sans5">전체</p>
+            </div>
+        </div>
+        <!-- 당당산악회 contents -->
+        <div class="crew">
+            <!-- 당당산악회 mainbanner -->
+            <div class="contents">
+                
+            </div>
+            <!-- 당당산악회 렝킹 -->
+            <div class="rank-container"> 
+                <div class="rank">
+                    <img src="images/rank2.png" class="rank-image" alt="rank-image"></img>
+                    <div class="circle2"></div>
+                    <p class="rank1 noto-sans5">당당산악회
+                </div>
+                <div class="rank">
+                    <img src="images/rank1.png" class="rank-image" alt="rank-image"></img>
+                    <div class="circle1"></div>
+                    <p class="rank2 noto-sans5">당당산악회
+                </div>
+                <div class="rank">
+                    <img src="images/rank3.png" class="rank-image" alt="rank-image"></img>
+                    <div class="circle2"></div>
+                    <p class="rank3 noto-sans5">당당산악회
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-banner">
+        <img src="images/battombanner.png" class="battombannerimage"/>
+    </div>
+    <div class="bottom-info">
+        <div class="bottom-info-contents">
+            <p class="noto-sans3B">co.MEAIR</p>
+            <p class="noto-sans5">이런저런내용을 적는 곳입니다 </br> 가나다라마바사 </br> 아자차타파</p>
+        </div>
+    </div>
+    <!-- 바텀네비게이션바를 위한 빈박스 -->
+    <div style="display: flex; background-color: rgb(255, 255, 255); height: 90px;"></div>
+    <!-- 바텀네비게이션바 -->
+    <div class="bottommenu-container">
+        <a href="/#a/"><img src="images/1.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/2.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/3.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/4.png" class="icon" alt="icon"></a>
+        <a href="/#a/"><img src="images/5.png" class="icon" alt="icon"></a>
+    </div>
+
+   
+
+    <!-- bxslider사용 -->
+    <script type="text/javascript">    
+        $(document).ready(function(){ 
+            $('.bxslider').bxSlider({
+                auto : true, // 자동회전
+                speed : 500, // 500ms
+                pause : 4000, // 멈춰있는 시간 4000ms
+                mode : 'horizontal', //수평으로 이동
+                pager : false, //페이징
+                controls : false, //좌우 화살표
+                shrinkItem : true,
+                adaptiveHeight : true, //각슬라이드 높이 자동조절
+                touchEnabled : true,
+                wrapperClass : 'bx-wrapper'
+            }); 
+        }); 
+    </script>    
+    <!-- swiper 사용 js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxon6eceolfT0xKcj2DZeGyVK85W6WIM&callback=initMap&v=weekly" async></script>
+    <script src="weather.js"></script>
+
+
+</body>
+</html>
